@@ -1,0 +1,20 @@
+.instructions {
+  .sub-title {
+    @apply text-gray-900 pb-2 border-b-2 border-gray-400 mb-5 text-xl font-medium;
+
+    & + p {
+      @apply mb-3;
+    }
+  }
+  .code {
+    @apply block font-mono border rounded bg-gray-100 text-gray-700 px-4 py-5 leading-normal text-sm shadow;
+
+    &.pre {
+      @apply whitespace-pre;
+    }
+
+    em {
+      @apply opacity-75;
+    }
+  }
+}

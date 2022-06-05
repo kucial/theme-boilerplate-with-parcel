@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theme boilerplate with parcel</title>
+  <include src="partials/common-head.html"></include>
+  <link rel="stylesheet" href="css/pages/index.scss">
+  <script src="js/pages/index.js" type="module"></script>
+</head>
+
+<body class="bg-gray-200">
+  <header class="p-20 bg-gradient-to-r from-purple-400 via-purple-500 to-pink-500 text-center">
+    <h1 class="hero-heading">Theme boilerplate</h1>
+    <p class="w-full text-center text-white text-xl leading-5 mb-10 mt-3">Pracel 2 + Tailwind 3.0</p>
+    <div class="py-15 flex justify-center space-x-6">
+      <a class="github-button" href="https://github.com/kucial" data-show-count="true"
+        aria-label="Follow @kucial on GitHub">Follow @kucial</a>
+      <a class="github-button" href="https://github.com/kucial/theme-boilerplate-with-parcel" data-icon="octicon-star"
+        data-show-count="true" aria-label="Star kucial/theme-boilerplate-with-parcel on GitHub">Star</a>
+      <a class="github-button" href="https://github.com/kucial/theme-boilerplate-with-parcel/fork"
+        data-icon="octicon-repo-forked" data-show-count="true"
+        aria-label="Fork kucial/theme-boilerplate-with-parcel on GitHub">Fork</a>
+      <a class="github-button" href="https://github.com/kucial/theme-boilerplate-with-parcel/archive/master.zip"
+        data-icon="octicon-cloud-download"
+        aria-label="Download kucial/theme-boilerplate-with-parcel on GitHub">Download</a>
+    </div>
+  </header>
+  <div class="mx-auto py-20 max-w-3xl">
+    <img class="shadow transition-shadow duration-500 rounded hover:shadow-lg mb-10" src="img/cover.png"
+      alt="Theme boilerplate with Parcel + Tailwindcss">
+
+    <div class="instructions">
+      <div class="mb-20 text-gray-700">
+        <h4 class="sub-title">Usage</h4>
+        <p>Use the following commands to get started.</p>
+        <code class="code">
+            <em>// To Install Dev Depedencies</em><br/>
+            npm install<br/><br/>
+
+            <em>// To start development and server for live preview</em><br/>
+            npm run start<br/><br/>
+
+            <em>// To generate minifed,optamized files for production server</em><br/>
+            npm run build<br/><br/>
+
+            <em>// To generate page</em><br/>
+            npm run g page<br/><br/>
+
+            <em>// To generate partial</em><br/>
+            npm run g partial
+
+        </code>
+      </div>
+
+      <div class="mb-20 text-gray-700">
+        <h4 class="sub-title">Directory Structure</h4>
+        <code class="code pre">.
+├── src
+│   ├── index.html
+│   ├── css
+│   │   ├── main.scss
+│   │   ├── pages               <span class='text-gray-400'># page style</span>
+│   │   └── partials            <span class='text-gray-400'># partial style</span>
+│   ├── img
+│   │   └── cover.png
+│   ├── js
+│   │   ├── main.js
+│   │   └── pages
+│   │       └── index.js        <span class="text-gray-400"># page js</span>
+│   └── partials
+│       └── common-head.html    <span class="text-gray-400"># to inject main.scss and main.js and common library</span>
+└── static
+    └── README.md               <span class="text-gray-400"># exteranl js library</span>
+        </code>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
